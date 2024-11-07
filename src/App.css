@@ -1,38 +1,99 @@
-.App {
+body {
+  /* background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%); */
+  background-image: linear-gradient(90.04deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #11052c;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 30em;
+}
+
+.quizBox {
+  width: 140em;
+  height: 65em;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 100px;
+  padding: 30px 60px;
+}
+
+.quizBox .activeQuestionNumb {
+  font-size: 5em;
+  font-weight: 500;
+  color: #cd9cf2;
+  cursor: default;
+}
+
+.quizBox .totalQuestion {
+  font-size: 5em;
+  font-weight: 500;
+  color: #e0dee3;
+  cursor: default;
+}
+
+.quizBox h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 0;
+  cursor: default;
+}
+
+.quizBox ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quizBox ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
+  font-size: 3rem;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.quizBox ul .selectedAnswer {
+  background: #f6f3ff;
+  border: 1px solid #cd9cf2;
+}
+
+.quizBox button {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  border-radius: 9px;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quizBox button:disabled {
+  background: #e7e8e9;
+  color: #9fa3a9;
+  cursor: not-allowed;
+}
+
+.result h3 {
+  font-size: 5rem;
+  text-align: center;
+  cursor: default;
+}
+
+.result p {
+  font-size: 4em;
+  font-weight: 500;
+  cursor: default;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result p span {
+  color: #800080;
+  font-size: 90%;
+  cursor: default;
 }
